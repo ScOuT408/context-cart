@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lora", serif;
+  overflow-x: hidden;
+}
+
+.cart__box {
+  padding: 2rem 3rem;
+  position: fixed;
+  right: 5rem;
+  top: 1rem;
+}
+
+.cart__box span {
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  position: fixed;
+  top: 1.8rem;
+  right: 6.9rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background: dodgerblue;
+}
+
+.cart__box > div {
+  background: rgb(241, 241, 241);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid gainsboro;
+}
+
+.cart__box > div .icon {
+  font-size: 2rem;
+  font-weight: 650;
+}
+
+.main__box {
+  padding: 1rem 1.6rem;
+}
+
+.grid__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  place-items: center;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+
+.grid__box .box {
+  width: 100%;
+  border: 0.1rem solid gainsboro;
+}
+
+.grid__box .box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.grid__box .box .box__info {
+  padding: 1rem;
+}
+
+.grid__box .box .box__info .name {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.grid__box .box .box__info .desc {
+  font-size: 1.3rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+
+.grid__box .box .box__info button {
+  padding: 1rem 2.2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: rgb(27, 27, 27);
+  color: #ffff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cart__div {
+  margin-top: 10rem;
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cart__table {
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.cart__table table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.cart__table table th {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart__table table tbody {
+  text-align: center;
+}
+
+.cart__table table tbody tr {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cart__table table tbody tr td img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.name {
+  width: 270px;
+}
+
+.cross span {
+  font-size: 2.5rem;
+  color: crimson;
+  cursor: pointer;
+}
+
+.total {
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.total > div {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+
+.go__back {
+  padding: 1rem 2.6rem;
+  background: rgb(39, 39, 39);
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
+
+  .cart__box {
+    right: 0rem;
+  }
+
+  .cart__box span {
+    right: 1.7rem;
+  }
+}
